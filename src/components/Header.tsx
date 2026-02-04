@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import SearchBar from './SearchBar';
 
@@ -15,9 +16,15 @@ export default function Header() {
         <div className="flex flex-col md:flex-row items-center gap-4">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 tap-target">
-            <span className="text-4xl">⚽</span>
+            <Image
+              src="/logo.png"
+              alt="GoalZilla Logo"
+              width={48}
+              height={48}
+              className="w-10 h-10 md:w-12 md:h-12"
+            />
             <h1 className="text-2xl md:text-3xl font-bold gradient-text">
-              Soccer Stats Hub
+              GoalZilla
             </h1>
           </Link>
 
@@ -31,18 +38,18 @@ export default function Header() {
             {!isHomePage && (
               <Link
                 href="/"
-                className="flex items-center gap-2 bg-blue-100 hover:bg-blue-200 px-4 py-2 rounded-full transition-colors tap-target"
+                className="flex items-center gap-2 bg-orange-100 hover:bg-orange-200 px-4 py-2 rounded-full transition-colors tap-target"
               >
                 <span className="text-xl">🏠</span>
-                <span className="font-medium text-blue-700 hidden sm:inline">Home</span>
+                <span className="font-medium text-orange-700 hidden sm:inline">Home</span>
               </Link>
             )}
             <Link
               href="/leagues"
               className={`flex items-center gap-2 px-4 py-2 rounded-full transition-colors tap-target ${
                 isLeaguesPage
-                  ? 'bg-purple-500 text-white'
-                  : 'bg-purple-100 hover:bg-purple-200 text-purple-700'
+                  ? 'bg-green-500 text-white'
+                  : 'bg-green-100 hover:bg-green-200 text-green-700'
               }`}
             >
               <span className="text-xl">📊</span>

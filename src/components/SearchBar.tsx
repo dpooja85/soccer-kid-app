@@ -57,7 +57,7 @@ export default function SearchBar() {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search teams or players..."
-          className="w-full px-6 py-4 text-lg rounded-full border-4 border-blue-300 focus:border-blue-500 focus:outline-none shadow-lg bg-white placeholder-gray-400 transition-all"
+          className="w-full px-6 py-4 text-lg rounded-full border-4 border-green-300 focus:border-green-500 focus:outline-none shadow-lg bg-white placeholder-gray-400 transition-all"
           aria-label="Search for teams or players"
         />
         <div className="absolute right-4 top-1/2 -translate-y-1/2 text-3xl">
@@ -66,13 +66,13 @@ export default function SearchBar() {
       </div>
 
       {isOpen && results.length > 0 && (
-        <div className="absolute top-full mt-2 w-full bg-white rounded-2xl shadow-2xl border-2 border-blue-200 overflow-hidden z-50">
+        <div className="absolute top-full mt-2 w-full bg-white rounded-2xl shadow-2xl border-2 border-green-200 overflow-hidden z-50">
           {results.map((result, index) => (
             <Link
               key={`${result.type}-${result.type === 'team' ? (result.item as Team).id : (result.item as Player).id}`}
               href={result.type === 'team' ? `/team/${(result.item as Team).id}` : `/player/${(result.item as Player).id}`}
               onClick={handleResultClick}
-              className={`flex items-center gap-4 p-4 hover:bg-blue-50 transition-colors tap-target ${
+              className={`flex items-center gap-4 p-4 hover:bg-green-50 transition-colors tap-target ${
                 index !== results.length - 1 ? 'border-b border-gray-100' : ''
               }`}
             >
@@ -118,7 +118,7 @@ export default function SearchBar() {
       )}
 
       {isOpen && query.length >= 2 && results.length === 0 && (
-        <div className="absolute top-full mt-2 w-full bg-white rounded-2xl shadow-2xl border-2 border-blue-200 p-6 text-center z-50">
+        <div className="absolute top-full mt-2 w-full bg-white rounded-2xl shadow-2xl border-2 border-green-200 p-6 text-center z-50">
           <div className="text-4xl mb-2">😕</div>
           <div className="text-gray-600">No results found for &quot;{query}&quot;</div>
         </div>

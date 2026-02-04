@@ -52,7 +52,7 @@ export default function PlayerPage() {
             <p className="text-gray-600 mb-6">We couldn&apos;t find this player.</p>
             <Link
               href="/"
-              className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full font-semibold transition-colors"
+              className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-semibold transition-colors"
             >
               <span>🏠</span> Go Home
             </Link>

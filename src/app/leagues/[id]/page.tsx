@@ -23,7 +23,7 @@ export default function LeaguePage() {
             <p className="text-gray-600 mb-6">We couldn&apos;t find this league.</p>
             <Link
               href="/leagues"
-              className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full font-semibold transition-colors"
+              className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-semibold transition-colors"
             >
               <span>📊</span> View All Leagues
             </Link>
@@ -69,7 +69,7 @@ export default function LeaguePage() {
               <Link
                 key={l.id}
                 href={`/leagues/${l.id}`}
-                className="inline-flex items-center gap-2 bg-white hover:bg-blue-50 border-2 border-blue-200 px-4 py-2 rounded-full transition-colors tap-target"
+                className="inline-flex items-center gap-2 bg-white hover:bg-green-50 border-2 border-green-200 px-4 py-2 rounded-full transition-colors tap-target"
               >
                 <span>{l.countryFlag}</span>
                 <span className="font-medium text-gray-700">{l.shortName}</span>

@@ -29,7 +29,7 @@ export default function TeamPage() {
             <p className="text-gray-600 mb-6">We couldn&apos;t find this team.</p>
             <Link
               href="/"
-              className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full font-semibold transition-colors"
+              className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-semibold transition-colors"
             >
               <span>🏠</span> Go Home
             </Link>
@@ -134,7 +134,7 @@ export default function TeamPage() {
               <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
                 Current Squad
               </h2>
-              <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-lg font-semibold">
+              <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-lg font-semibold">
                 {players.length} players
               </span>
             </div>

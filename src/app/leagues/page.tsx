@@ -17,7 +17,7 @@ function LeagueCard({ league }: LeagueCardProps) {
 
   return (
     <Link href={`/leagues/${league.id}`} className="block">
-      <div className="card-hover bg-white rounded-3xl p-6 shadow-lg border-4 border-blue-200 cursor-pointer tap-target">
+      <div className="card-hover bg-white rounded-3xl p-6 shadow-lg border-4 border-green-200 cursor-pointer tap-target">
         <div className="flex flex-col items-center text-center">
           {/* League Logo */}
           <div className="w-20 h-20 md:w-24 md:h-24 mb-4 flex items-center justify-center">

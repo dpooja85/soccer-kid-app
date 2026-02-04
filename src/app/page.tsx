@@ -13,7 +13,7 @@ function LeagueQuickCard({ league }: { league: typeof leagues[0] }) {
 
   return (
     <Link href={`/leagues/${league.id}`} className="block">
-      <div className="card-hover bg-white rounded-2xl p-4 shadow-lg border-2 border-purple-200 cursor-pointer tap-target">
+      <div className="card-hover bg-white rounded-2xl p-4 shadow-lg border-2 border-green-200 cursor-pointer tap-target">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 flex-shrink-0">
             <Image
@@ -49,7 +49,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
-            Welcome to Soccer Stats Hub!
+            Welcome to GoalZilla!
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Click on a team to see their players, or search for your favorite player!
@@ -67,7 +67,7 @@ export default function Home() {
             </div>
             <Link
               href="/leagues"
-              className="text-purple-600 hover:text-purple-800 font-semibold text-sm md:text-base"
+              className="text-green-600 hover:text-green-800 font-semibold text-sm md:text-base"
             >
               View All →
             </Link>

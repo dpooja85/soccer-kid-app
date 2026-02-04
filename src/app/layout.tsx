@@ -9,9 +9,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Soccer Stats Hub - Fun Soccer Stats for Kids!",
-  description: "Discover your favorite Premier League players and teams with fun, easy-to-read stats!",
-  keywords: ["soccer", "football", "premier league", "kids", "stats", "players", "teams"],
+  title: "GoalZilla - Fun Soccer Stats for Kids!",
+  description: "Discover your favorite Premier League players and teams with fun, easy-to-read stats! GoalZilla makes soccer stats fun for young fans.",
+  keywords: ["soccer", "football", "premier league", "kids", "stats", "players", "teams", "goalzilla"],
 };
 
 export default function RootLayout({

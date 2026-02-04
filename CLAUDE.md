@@ -1,6 +1,6 @@
-# Soccer Stats Hub
+# GoalZilla
 
-A kid-friendly soccer statistics website for children ages 7-12, featuring Premier League teams, players, and league tables.
+A kid-friendly soccer statistics website for children ages 7-12, featuring Premier League teams, players, and league tables. The name and branding features a fun dinosaur mascot with a green/orange/yellow color scheme.
 
 ## Tech Stack
 
@@ -49,6 +49,7 @@ npm run lint     # Run ESLint
 - **Mobile-first**: Touch-friendly tap targets (44x44px minimum)
 - **Accessible**: High contrast, clear navigation
 - **No ads**: Clean, distraction-free experience
+- **Color scheme**: Green (primary), Orange/Yellow (accents) - derived from the GoalZilla dinosaur logo
 
 ## Data Notes
 
