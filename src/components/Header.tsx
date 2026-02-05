@@ -9,6 +9,7 @@ export default function Header() {
   const pathname = usePathname();
   const isHomePage = pathname === '/';
   const isLeaguesPage = pathname.startsWith('/leagues');
+  const isMatchesPage = pathname.startsWith('/matches');
 
   return (
     <header className="sticky top-0 z-40 bg-white/80 backdrop-blur-md shadow-md">
@@ -44,6 +45,17 @@ export default function Header() {
                 <span className="font-medium text-orange-700 hidden sm:inline">Home</span>
               </Link>
             )}
+            <Link
+              href="/matches"
+              className={`flex items-center gap-2 px-4 py-2 rounded-full transition-colors tap-target ${
+                isMatchesPage
+                  ? 'bg-orange-500 text-white'
+                  : 'bg-orange-100 hover:bg-orange-200 text-orange-700'
+              }`}
+            >
+              <span className="text-xl">📅</span>
+              <span className="font-medium hidden sm:inline">Matches</span>
+            </Link>
             <Link
               href="/leagues"
               className={`flex items-center gap-2 px-4 py-2 rounded-full transition-colors tap-target ${

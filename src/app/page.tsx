@@ -56,6 +56,22 @@ export default function Home() {
           </p>
         </section>
 
+        {/* Match Schedule Banner */}
+        <Link href="/matches" className="block mb-12">
+          <div className="card-hover bg-gradient-to-r from-orange-500 to-yellow-500 rounded-3xl p-6 text-white cursor-pointer">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-4">
+                <span className="text-5xl">📅</span>
+                <div>
+                  <h3 className="text-2xl font-bold">This Week&apos;s Matches</h3>
+                  <p className="text-orange-100">See all upcoming games with times in ET!</p>
+                </div>
+              </div>
+              <div className="text-4xl">→</div>
+            </div>
+          </div>
+        </Link>
+
         {/* League Tables Section */}
         <section className="mb-12">
           <div className="flex items-center justify-between mb-6">
